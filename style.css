@@ -188,7 +188,7 @@ form button {
 
 .tasks-container {
   width: 100%;
-  height: calc(100vh - 16% - 5px);
+  height: calc(100vh - 16%);
   padding: 2rem 4rem;
   color: var(--text-white);
   display: flex;

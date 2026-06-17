@@ -196,7 +196,10 @@ const setStatus = (btn) => {
 };
 
 const edit = (btn) => {
+  
   const task = btn.closest(".task");
+  const options = task.querySelector(".options");
+  options.classList.add("hidden");
   index = task.dataset.id;
 
   formBG.style.display = "flex";
