@@ -44,10 +44,6 @@ main {
 
 .theme{
   cursor: pointer;
-  /* position: absolute;
-  left: 50%;
-  top: 50%; */
-  margin-left: 4rem;
   width: 75px;
   height: 30px;
   background: var(--smoother);
@@ -64,6 +60,29 @@ main {
   width: 25px;
   height: 100%;
   border-radius: 10rem;
+}
+
+.change{
+  margin-top: 1rem;
+  padding: 0rem 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explanation{
+  text-decoration: none;
+  color: var(--text-white);
+  border: solid 1px var(--brown-dark);
+  font-size: 1.1rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease-out;
+}
+
+.explanation:hover{
+  background: #202020;
 }
 
 .heading{
@@ -195,7 +214,7 @@ form button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   /* transition: all 0.3s ease-out; */
 }
 
@@ -224,6 +243,7 @@ form button {
   padding: 1rem;
   border-radius: 0.4rem;
   border: solid 1px var(--brown-light);
+  transition: all 0.15s ease-out;
 }
 
 .task-left {
@@ -299,6 +319,7 @@ form button {
 }
 
 .options {
+  z-index: 2;
   position: absolute;
   color: #eeeeee;
   right: -50px;

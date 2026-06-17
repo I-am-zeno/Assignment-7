@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Rendering Flow</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>How Browsers Render a Web Page</h1>
+        <p class="subtitle">
+            Step-by-step journey from HTML & CSS to pixels on the screen.
+        </p>
+
+        <div class="flow">
+
+            <div class="card">
+                <h2>1. HTML File</h2>
+                <p>
+                    Browser receives the HTML document from the server.
+                    This is the raw markup containing elements like
+                    headings, paragraphs, images, buttons, etc.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h2>2. Parsing HTML</h2>
+                <p>
+                    The browser reads the HTML character by character
+                    and starts understanding its structure.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h2>3. Tokenization</h2>
+                <p>
+                    HTML is broken into tokens such as opening tags,
+                    closing tags, attributes, and text content.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card">
+                <h2>4. DOM Tree</h2>
+                <p>
+                    Browser converts the HTML into a tree-like structure
+                    called the Document Object Model (DOM).
+                    JavaScript can access and modify this tree.
+                </p>
+            </div>
+
+            <div class="arrow split">⇣</div>
+
+            <div class="card css-card">
+                <h2>5. CSS File</h2>
+                <p>
+                    Browser downloads and reads all CSS files and
+                    style rules.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card css-card">
+                <h2>6. CSSOM Tree</h2>
+                <p>
+                    CSS rules are converted into the CSS Object Model
+                    (CSSOM), which stores all styling information.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card final">
+                <h2>7. DOM + CSSOM</h2>
+                <p>
+                    Browser combines structure (DOM) and styling (CSSOM)
+                    together.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card final">
+                <h2>8. Render Tree</h2>
+                <p>
+                    A render tree is created containing only visible
+                    elements along with their computed styles.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card final">
+                <h2>9. Layout (Reflow)</h2>
+                <p>
+                    Browser calculates the exact size and position
+                    of every visible element.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card final">
+                <h2>10. Paint</h2>
+                <p>
+                    Colors, borders, shadows, text and images are
+                    painted onto different layers.
+                </p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="card final">
+                <h2>11. Composite</h2>
+                <p>
+                    Layers are merged together and displayed on
+                    the user's screen.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ const rootEL = document.documentElement;
 const theme = document.querySelector(".theme");
 const themeBtn = document.querySelector(".theme-btn");
 const heading = document.querySelector(".heading");
+const explanation = document.querySelector(".explanation");
 
 theme.addEventListener("click", () => {
   if (theme.dataset.theme == "dark") {
