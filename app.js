@@ -117,7 +117,8 @@ form.addEventListener("submit", (e) => {
 
     task["title"] = obj.title;
     task["category"] = obj.category;
-    console.log(tasks);
+    
+    index = null
   } else {
     tasks.push(obj);
   }
