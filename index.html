@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav>
+                <h1 class="heading no-select">Task Manager <small><sup>(Local storage included)</sup></small></h1>
+                <button class="add no-select">Add Task</button>
+                <span class="no-select"></span>
+            </nav><br>
+            <span data-theme="dark" class="theme"><span class="theme-btn"></span></span>
+            
+            <div class="no-select tasks-container">
+                <div data-id="..." data-status="..." data-category="..." class="task">
+                    <div class="task-left">
+                        <h3>task title</h3>
+                        <h5>Work</h5>
+                    </div>
+                    <div class="current-status not-started">Not Started</div>
+                    <div class="task-right">
+                        <span class="more">...</span>
+                        <div class="options hidden">
+                            <span class="edit">Edit</span>
+                            <span class="delete">Delete</span>
+                            <div class="status-container">
+                                <span class="status-btn">Status</span>
+                                <div class="status hidden">
+                                    <span class="not-started">Not Started</span>
+                                    <span class="in-progress">In - Progress</span>
+                                    <span class="completed">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form">
+                <form>
+                    <div>
+                        <h2>Create Task</h2>
+                        <span class="close-form">x</span>
+                    </div>
+                    <input id="title" type="text" placeholder="Title">
+                    <select id="categories">
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Study">Study</option>
+                        <option value="Health">Health</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Finance">Finance</option>
+                    </select>
+                    <button class="submit">Add +</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
